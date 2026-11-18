@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Album de Figurinhas | Rick and Morty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Album de Figurinhas - Rick and Morty</h1>
+    <p>Dados em tempo real da API <strong>Rick and Morty</strong></p>
+  </header>
+
+  <main>
+    <section class="filtros">
+      <input type="text" id="busca" placeholder="Buscar personagem pelo nome...">
+      <select id="status">
+        <option value="">Todos os status</option>
+        <option value="alive">Vivo</option>
+        <option value="dead">Morto</option>
+        <option value="unknown">Desconhecido</option>
+      </select>
+    </section>
+
+    <p id="mensagem" class="mensagem"></p>
+
+    <!-- PONTO 1  -->
+    <section id="cards" class="grade"></section>
+
+    <nav class="paginacao">
+      <button id="anterior">&larr; Anterior</button>
+      <span id="pagina-atual"></span>
+      <button id="proxima">Próxima &rarr;</button>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Projeto Joao Gabriel Natalino Ferst· HTML, CSS e JavaScript · API: rickandmortyapi.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
